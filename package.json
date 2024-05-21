@@ -1,0 +1,31 @@
+{
+    "name": "ts-isolate",
+    "version": "0.0.1",
+    "repository": "https://github.com/lazytype/ts-isolate",
+    "author": "lazytype <lazytype@users.noreply.github.com>",
+    "license": "MIT",
+    "type": "module",
+    "main": "dist/index.js",
+    "bin": {
+        "ts-isolate": "./bin/ts-isolate.js"
+    },
+    "scripts": {
+        "prepublishOnly": "tsc"
+    },
+    "engines": {
+        "node": ">=16.20.2"
+    },
+    "sideEffects": false,
+    "files": [
+        "bin/ts-isolate.js",
+        "dist",
+        "!dist/**/*.test.{js,js.map}"
+    ],
+    "devDependencies": {
+        "@types/node": "16.6.2"
+    },
+    "dependencies": {
+        "clipanion": "4.0.0-rc.3",
+        "typescript": "5.5.0-dev.20240521"
+    }
+}
