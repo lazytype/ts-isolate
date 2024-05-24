@@ -164,6 +164,11 @@ function applyTextChanges(
                 for (const match of newText.matchAll(dynamicTypeRegex)) {
                     const [matchText, module, type] = match;
                     assert(module && type);
+
+                    if (module === 'react/jsx-runtime' && type === 'JSX') {
+                        continue;
+                    }
+                    
                     if (!importsToAddByModule.has(module)) {
                         importsToAddByModule.set(module, new Set());
                     }
@@ -180,10 +185,6 @@ function applyTextChanges(
         }
 
         fileText = `${fileText.substring(0, start)}${updatedText}${fileText.substring(end)}`;
-    }
-
-    if (fixupTypes) {
-        fileText = fileText.replace(/import \{( type)? JSX \} from 'react\/jsx-runtime';\n/g, '');
     }
 
     if (importsToAddByModule.size > 0) {
