@@ -1,42 +1,50 @@
-lockfileVersion: '6.0'
+lockfileVersion: '9.0'
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  clipanion:
-    specifier: 4.0.0-rc.3
-    version: 4.0.0-rc.3(typanion@3.14.0)
-  typescript:
-    specifier: 5.5.0-dev.20240521
-    version: 5.5.0-dev.20240521
+importers:
 
-devDependencies:
-  '@types/node':
-    specifier: 16.6.2
-    version: 16.6.2
+  .:
+    dependencies:
+      clipanion:
+        specifier: 4.0.0-rc.3
+        version: 4.0.0-rc.3(typanion@3.14.0)
+      typescript:
+        specifier: 5.5.0-dev.20240524
+        version: 5.5.0-dev.20240524
+    devDependencies:
+      '@types/node':
+        specifier: 16.6.2
+        version: 16.6.2
 
 packages:
 
-  /@types/node@16.6.2:
+  '@types/node@16.6.2':
     resolution: {integrity: sha512-LSw8TZt12ZudbpHc6EkIyDM3nHVWKYrAvGy6EAJfNfjusbwnThqjqxUKKRwuV3iWYeW/LYMzNgaq3MaLffQ2xA==}
-    dev: true
 
-  /clipanion@4.0.0-rc.3(typanion@3.14.0):
+  clipanion@4.0.0-rc.3:
     resolution: {integrity: sha512-+rJOJMt2N6Oikgtfqmo/Duvme7uz3SIedL2b6ycgCztQMiTfr3aQh2DDyLHl+QUPClKMNpSg3gDJFvNQYIcq1g==}
     peerDependencies:
       typanion: '*'
-    dependencies:
-      typanion: 3.14.0
-    dev: false
 
-  /typanion@3.14.0:
+  typanion@3.14.0:
     resolution: {integrity: sha512-ZW/lVMRabETuYCd9O9ZvMhAh8GslSqaUjxmK/JLPCh6l73CvLBiuXswj/+7LdnWOgYsQ130FqLzFz5aGT4I3Ug==}
-    dev: false
 
-  /typescript@5.5.0-dev.20240521:
-    resolution: {integrity: sha512-52WLKX9mbRmStK1lb30KM78dSo5ssgQT8WQERYiv8JihXir4HUgwlgTz4crExojzpsGjFGFJROL/bZrhXUiOEQ==}
+  typescript@5.5.0-dev.20240524:
+    resolution: {integrity: sha512-x37/rBPLFB451GxMIKP4oVm18+iMs34VzcbyoqDLHX8+TfGZdiTEIfZOi2p6nWJTV6jmd8qyIc6KnAR9tHWxsw==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: false
+
+snapshots:
+
+  '@types/node@16.6.2': {}
+
+  clipanion@4.0.0-rc.3(typanion@3.14.0):
+    dependencies:
+      typanion: 3.14.0
+
+  typanion@3.14.0: {}
+
+  typescript@5.5.0-dev.20240524: {}

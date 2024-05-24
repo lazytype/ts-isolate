@@ -26,6 +26,6 @@
     },
     "dependencies": {
         "clipanion": "4.0.0-rc.3",
-        "typescript": "5.5.0-dev.20240521"
+        "typescript": "5.5.0-dev.20240524"
     }
 }
