@@ -1,6 +1,6 @@
 {
     "name": "ts-isolate",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository": "https://github.com/lazytype/ts-isolate",
     "author": "lazytype <lazytype@users.noreply.github.com>",
     "license": "MIT",
