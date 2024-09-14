@@ -2,7 +2,7 @@
 
 > :warning: Usage of the tool has only been exercised on MacOS
 
-This tool assumes that you have a TypeScript project with isolatedDeclarations enabled. It will attempt to resolve errors due to isolatedDeclarations by applying autofixes provided by the TypeScript compiler. These are the same autofixes that would be applied when using Quick Fixes in Visual Studio Code. This tool currently has a pinned dependency on a nightly version of TypeScript. If you wish to use a more recent version of TypeScript, you can clone and build the tool yourself, or open a pull request to bump the TypeScript version.
+This tool assumes that you have a TypeScript project with isolatedDeclarations enabled. It will attempt to resolve errors due to isolatedDeclarations by applying autofixes provided by the TypeScript compiler. These are the same autofixes that would be applied when using Quick Fixes in Visual Studio Code. If you wish to use a more recent version of TypeScript, you can clone and build the tool yourself, or open a pull request to bump the TypeScript version.
 
 # Installation
 
